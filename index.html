@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>LaBaguette</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="./styles/style.css">
+<style>
+
+</style>
+<script></script>
+
+<body>
+    <div id="skewedr1">r</div>
+    <div id="skewedr2">r</div>
+    <div id="skewedr3">r</div>
+    <div id="skewedl1">r</div>
+    <div id="skewedl2">r</div>
+    <div id="skewedl3">r</div>
+    <header>
+        <h1>Bienvenue sur LaSearchBaguette</h1>
+
+        <a href="https://www.youtube.com/" class="btnheader">YouTube</a>
+        <a href="https://open.spotify.com" class="btnheader">Spotify</a>
+        <a href="https://www.instagram.com/" class="btnheader">Instagram</a>
+        <a href="https://discord.com/" class="btnheader">Discord</a>
+
+    </header>
+    <div id="main">
+        <input class="request" type="search" placeholder="Search what do you want with LaSearchBaguette" value="">
+        <div id="btn">
+            <button class="search">
+        Search
+        </button>
+        </div>
+    </div>
+    <script>
+        let request = document.querySelector(".request");
+        let search = document.querySelector(".search");
+
+        search.onclick = function() {
+            let url = "https://www.google.com/search?q=" + request.value;
+            window.open(url, "_self");
+        }
+        request.value = '';
+    </script>
+</body>
+
+</html>
