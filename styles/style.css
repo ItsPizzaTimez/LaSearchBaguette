@@ -1,137 +1,183 @@
-html {
-    font-family: Copperplate Gothic Light, sans-serif;
-    color: #252525;
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: rgb(191, 169, 90);
-    overflow-y: hidden;
-    overflow-x: hidden;
-}
-
-#skewedr1 {
-    background-color: rgb(158, 133, 88);
-    transform: skewY(-45deg);
-    width: 292%;
-    padding-left: -200%;
-}
-
-#skewedr2 {
-    background-color: rgb(158, 133, 88);
-    transform: skewY(-45deg);
-    width: 286%;
-    padding-left: -200%;
-}
-
-#skewedr3 {
-    background-color: rgb(158, 133, 88);
-    transform: skewY(-45deg);
-    width: 280%;
-    padding-left: -200%;
-}
-
-#skewedl1 {
-    background-color: rgb(158, 133, 88);
-    transform: skewY(-45deg);
-    width: 292%;
-    padding-left: -200%;
-}
-
-#skewedl2 {
-    background-color: rgb(158, 133, 88);
-    transform: skewY(-45deg);
-    width: 286%;
-    padding-left: -200%;
-}
-
-#skewedl3 {
-    background-color: rgb(158, 133, 88);
-    transform: skewY(-45deg);
-    width: 280%;
-    padding-left: -200%;
-}
-
-header {
-    padding-left: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 75%;
-}
-
-#main {
-    border: 5px rgb(158, 133, 88) solid;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40em;
-    transition: all 300ms;
-}
-
-#main:hover {
-    border-bottom-right-radius: 7px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-
-.request {
-    width: 35em;
-    height: 5em;
-    font-family: Century;
-    font-size: large;
-    background-color: transparent;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-left-color: transparent;
-    transition: all 256ms;
-    border-bottom-color: #252525;
-}
-
-.request::placeholder {
-    font-family: Copperplate Gothic Light, sans-serif;
-    color: #252525;
-    font-size: 1.2em;
-}
-
-input {
-    outline: none;
-}
-
-.btnheader,
-.btnheader:hover,
-.btnheader::after {
-    color: black;
-    text-decoration: none;
-    transition: transform 256ms;
-    font-size: 1.4em;
-}
-
-.btnheader::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background: black;
-    transform: scale(0);
-    transition: transform 0.2s ease-in-out;
-    bottom: 0
-}
-
-.btnheader:hover::after {
-    transform: scale(1);
-}
-
-.btnheader:hover {
-    color: black;
-    text-decoration: line;
-    transform: translateY(-5%)
-}
+    html {
+        font-family: Copperplate Gothic Light, sans-serif;
+        color: #252525;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background: rgb(191, 169, 90);
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    #skewedr1 {
+        background-color: rgb(158, 133, 88);
+        transform: skewY(-45deg);
+        width: 292%;
+        padding-left: -200%;
+    }
+    
+    #skewedr2 {
+        background-color: rgb(158, 133, 88);
+        transform: skewY(-45deg);
+        width: 286%;
+        padding-left: -200%;
+    }
+    
+    #skewedr3 {
+        background-color: rgb(158, 133, 88);
+        transform: skewY(-45deg);
+        width: 280%;
+        padding-left: -200%;
+    }
+    
+    #skewedl1 {
+        background-color: rgb(158, 133, 88);
+        transform: skewY(-45deg);
+        width: 292%;
+        padding-left: -200%;
+    }
+    
+    #skewedl2 {
+        background-color: rgb(158, 133, 88);
+        transform: skewY(-45deg);
+        width: 286%;
+        padding-left: -200%;
+    }
+    
+    #skewedl3 {
+        background-color: rgb(158, 133, 88);
+        transform: skewY(-45deg);
+        width: 280%;
+        padding-left: -200%;
+    }
+    
+    header {
+        padding-left: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+    }
+    
+    #main {
+        border: 5px rgb(158, 133, 88) solid;
+        border-top-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40em;
+        transition: all 300ms;
+    }
+    
+    #main:hover {
+        border-bottom-right-radius: 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .request {
+        width: 35em;
+        height: 5em;
+        font-family: Century;
+        font-size: large;
+        background-color: transparent;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        transition: all 256ms;
+        border-bottom-color: #252525;
+    }
+    
+    .request::placeholder {
+        font-family: Copperplate Gothic Light, sans-serif;
+        color: #252525;
+        font-size: 1.2em;
+        display: flex;
+        justify-content: flex-start;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        animation: typing 3.5s steps(45);
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    input {
+        outline: none;
+    }
+    
+    .btnheader,
+    .btnheader:hover,
+    .btnheader::after {
+        color: black;
+        text-decoration: none;
+        transition: transform 256ms;
+        font-size: 1.4em;
+    }
+    
+    .btnheader::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: black;
+        transform: scale(0);
+        transition: transform 0.2s ease-in-out;
+        bottom: 0
+    }
+    
+    .btnheader:hover::after {
+        transform: scale(1);
+    }
+    
+    .btnheader:hover {
+        color: black;
+        text-decoration: line;
+        transform: translateY(-5%)
+    }
+    
+    .typewriter-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .typewriter h1 {
+        font-size: 45px;
+        font-weight: lighter;
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        animation: typing 3.5s steps(30);
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0
+        }
+        to {
+            width: 100%;
+        }
+    }
+    
+    #end {
+        margin-top: 1.5%;
+        margin-left: 10%;
+        width: 19%;
+        display: flex;
+        justify-content: space-between;
+    }
